@@ -774,7 +774,9 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   margin: 45px 0;
-  color: #0c0c0c;
+  color: #000000;
+  background: linear-gradient(transparent 25%, rgb(2, 2, 48) 25%);
+  
 }
 
 .client_section .box .img-box {
@@ -836,7 +838,7 @@ a:focus {
 .client_section .carousel-control-next {
   width: 50px;
   height: 50px;
-  background-color: #4f565800;
+  background-color: #4f5658;
   opacity: 1;
   font-size: 28px;
   font-weight: bold;
