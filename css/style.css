@@ -102,11 +102,15 @@ a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+#logo{
+  width: 50px;
+  height: 50px;
 
+}
 /*header section*/
 .hero_area {
   position: relative;
-  background-color: rgba(81, 81, 126, 0.863);
+  background-color: rgba(255, 255, 255, 0);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,17 +142,18 @@ a:focus {
   margin: 0;
   top: 0; /* Align the navbar to the top of the viewport */
   left: 0;
-  background: rgb(81, 81, 126);
-  z-index: 999999;
+  background: rgb(255, 255, 255);
+  z-index: 9;
   width: 100%;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 3px 15px;
-  margin: 10px 15px;
-  color: #ffffff;
+  padding: 3px;
+  margin: 10px ;
+  color: #000000;
   text-align: center;
-  text-transform: uppercase;
+
+  /* text-transform: uppercase; */
 }
 
 .custom_nav-container .nav_search-btn {
@@ -245,26 +250,20 @@ a:focus {
   transform: none;
 }
 
-.quote_btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.quote_btn-container a {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.quote_btn-container a span {
-  margin-left: 5px;
-}
-
-/*end header section*/
 /* slider section */
+.slider_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/slider-bg.jpg") no-repeat center center;
+  background-size: cover;
+  filter: blur(5px); /* Adjust the blur radius as needed */
+  z-index: -20; /* Move the blurred background behind the content */
+}
+
 .slider_section {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -275,14 +274,19 @@ a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 85px;
   padding-bottom: 90px;
+  
 }
 
 .slider_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
+  padding: 20px;
+  border-radius: 9px;
+  
 }
 
 .slider_section #customCarousel1 {
@@ -292,6 +296,10 @@ a:focus {
 
 .slider_section .detail-box {
   color: #ffffff;
+  /* background-color: rgb(77, 73, 73); */
+  border-radius: 9px;
+  padding: 20px;
+
 }
 
 .slider_section .detail-box h1 {
@@ -388,10 +396,18 @@ a:focus {
   color: #000000;
 }
 
+
+
+.about_section {
+  position: relative;
+  padding: 90px 0;
+ background-color: rgb(204, 204, 204);
+}
 .about_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
 }
 
 .about_section .img-box img {
@@ -399,7 +415,7 @@ a:focus {
 }
 
 .about_section .detail-box p {
-  color: #999;
+  color: #000000;
   margin-top: 15px;
 }
 
@@ -422,12 +438,14 @@ a:focus {
 
 .service_section {
   position: relative;
+  background-color: #ebe5e5;
 }
 
 .service_section .box {
   margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
+  min-height: 380px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -437,8 +455,9 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  border-radius: 25px;
   padding: 25px;
-  background-color: #fafafa;
+  background-color: #a693caef;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 }
@@ -567,6 +586,10 @@ a:focus {
   z-index: 1;
   -webkit-animation: after-animation 1500ms infinite;
   animation: after-animation 1500ms infinite;
+}
+
+.price_section{
+  background-color: #d3d3d3;
 }
 
 @-webkit-keyframes before-animation {
@@ -734,6 +757,9 @@ a:focus {
 
 .client_section {
   padding-bottom: 45px;
+  background: #020230;
+  color: #ffffff;
+
 }
 
 .client_section .heading_container {
@@ -748,6 +774,7 @@ a:focus {
   -ms-flex-align: center;
   align-items: center;
   margin: 45px 0;
+  color: #0c0c0c;
 }
 
 .client_section .box .img-box {
@@ -795,6 +822,7 @@ a:focus {
 
 .client_section .box p {
   margin-top: 25px;
+
 }
 
 .client_section .box .detail-box {
@@ -808,7 +836,7 @@ a:focus {
 .client_section .carousel-control-next {
   width: 50px;
   height: 50px;
-  background-color: #03a7d3;
+  background-color: #4f565800;
   opacity: 1;
   font-size: 28px;
   font-weight: bold;
@@ -841,7 +869,7 @@ a:focus {
   padding-left: 15px;
   background-color: transparent;
   outline: none;
-  color: #101010;
+  color: #ffffff;
 }
 
 .contact_section .form_container input::-webkit-input-placeholder {
