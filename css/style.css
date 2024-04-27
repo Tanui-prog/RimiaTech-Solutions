@@ -145,6 +145,7 @@ a:focus {
   background: rgb(255, 255, 255);
   z-index: 9;
   width: 100%;
+  border-bottom: #92929b 5px double;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -857,6 +858,7 @@ a:focus {
 
 .contact_section {
   position: relative;
+  background-color: #848484;
 }
 
 .contact_section .heading_container {
@@ -1375,3 +1377,5 @@ section {
   background-color: #191e34;
   color: #ffff;
 }
+
+
